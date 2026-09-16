@@ -1,22 +1,116 @@
 {
   "title": "Видеоархив курса",
-  "description": "Локальные видеозаписи курса. Файлы хранятся в этом репозитории и не требуют перехода в Telegram.",
+  "provider": "Google Drive",
+  "folder_url": "https://drive.google.com/drive/folders/10QrEjwibyZQt4iQQ1C4spx9a1gpqBa-T",
+  "description": "12 записей из папки владельца. Просмотр встроен в страницы уроков.",
   "lessons": [
-    {"id": 1, "title": "Вводная часть. Аверс и реверс системы", "file": "lesson-01.mp4"},
-    {"id": 2, "title": "Декларация о самоопределении", "file": "lesson-02.mp4"},
-    {"id": 3, "title": "Юрисдикции, персоны и структура векселя", "file": "lesson-03.mp4"},
-    {"id": 4, "title": "Структура векселя", "file": "lesson-04.mp4"},
-    {"id": 5, "title": "Индоссаменты и аллонжи", "file": "lesson-05.mp4"},
-    {"id": 6, "title": "Способы оплаты векселя", "file": "lesson-06.mp4"},
-    {"id": 7, "title": "Акт о морском протесте и отзыв акцепта", "file": "lesson-07.mp4"},
-    {"id": 8, "title": "Государственная почта", "file": "lesson-08.mp4"},
-    {"id": 9, "title": "Вексель для близких", "file": "lesson-09.mp4"},
-    {"id": 10, "title": "Чеки, документы и признание персон", "file": "lesson-10.mp4"},
-    {"id": 11, "title": "Переакцепты и введение полезных законов", "file": "lesson-11.mp4"},
-    {"id": 12, "title": "Завершающий вексельный свод", "file": "lesson-12.mp4"}
-  ],
-  "supplementary": [
-    {"id": 3, "title": "Ответы на вопросы к уроку 3", "file": "supplement-03.mp4"},
-    {"id": 9, "title": "Сшивание документов — дополнение", "file": "supplement-09.mp4"}
+    {
+      "id": 1,
+      "title": "Вводная часть. Аверс и реверс системы",
+      "short_title": "Аверс и реверс",
+      "drive_id": "12s7Kzu0DUBJvGR9rgqdZChtz3J5v3H_V",
+      "view_url": "https://drive.google.com/file/d/12s7Kzu0DUBJvGR9rgqdZChtz3J5v3H_V/view",
+      "embed_url": "https://drive.google.com/file/d/12s7Kzu0DUBJvGR9rgqdZChtz3J5v3H_V/preview",
+      "source_name": "Урок 1.mp4"
+    },
+    {
+      "id": 2,
+      "title": "Декларация о самоопределении",
+      "short_title": "Самоопределение",
+      "drive_id": "19rO_6PTZ2QWd5Iee642l386totfubQ8u",
+      "view_url": "https://drive.google.com/file/d/19rO_6PTZ2QWd5Iee642l386totfubQ8u/view",
+      "embed_url": "https://drive.google.com/file/d/19rO_6PTZ2QWd5Iee642l386totfubQ8u/preview",
+      "source_name": "Урок 2.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Юрисдикции, персоны и структура векселя",
+      "short_title": "Юрисдикции",
+      "drive_id": "1auVuFTSsm6DK5J_4NRcYT3oW279_0a7q",
+      "view_url": "https://drive.google.com/file/d/1auVuFTSsm6DK5J_4NRcYT3oW279_0a7q/view",
+      "embed_url": "https://drive.google.com/file/d/1auVuFTSsm6DK5J_4NRcYT3oW279_0a7q/preview",
+      "source_name": "Урок 3.mp4"
+    },
+    {
+      "id": 4,
+      "title": "Структура векселя",
+      "short_title": "Структура векселя",
+      "drive_id": "171PkPUSHQnUVqEGWCyqFuX7ITBWllL1Z",
+      "view_url": "https://drive.google.com/file/d/171PkPUSHQnUVqEGWCyqFuX7ITBWllL1Z/view",
+      "embed_url": "https://drive.google.com/file/d/171PkPUSHQnUVqEGWCyqFuX7ITBWllL1Z/preview",
+      "source_name": "Урок 4.mp4"
+    },
+    {
+      "id": 5,
+      "title": "Индоссаменты и аллонжи",
+      "short_title": "Индоссамент и аллонж",
+      "drive_id": "1Rx4bI9h8ywmEPGwNT29Cj11fjm6NuIqw",
+      "view_url": "https://drive.google.com/file/d/1Rx4bI9h8ywmEPGwNT29Cj11fjm6NuIqw/view",
+      "embed_url": "https://drive.google.com/file/d/1Rx4bI9h8ywmEPGwNT29Cj11fjm6NuIqw/preview",
+      "source_name": "Урок 5 Индосамент и аллонж.mp4"
+    },
+    {
+      "id": 6,
+      "title": "Способы оплаты векселя",
+      "short_title": "Способы оплаты",
+      "drive_id": "162mLqB5ty2Z9T_i9uZZvXGbIPAcYtxDA",
+      "view_url": "https://drive.google.com/file/d/162mLqB5ty2Z9T_i9uZZvXGbIPAcYtxDA/view",
+      "embed_url": "https://drive.google.com/file/d/162mLqB5ty2Z9T_i9uZZvXGbIPAcYtxDA/preview",
+      "source_name": "Урок 6 Конклюдентные действия.mp4"
+    },
+    {
+      "id": 7,
+      "title": "Акт о морском протесте и отзыв акцепта",
+      "short_title": "Протест и акцепт",
+      "drive_id": "1pnf5NKSpoSS0V0hMx2AodiDxYetkjUVs",
+      "view_url": "https://drive.google.com/file/d/1pnf5NKSpoSS0V0hMx2AodiDxYetkjUVs/view",
+      "embed_url": "https://drive.google.com/file/d/1pnf5NKSpoSS0V0hMx2AodiDxYetkjUVs/preview",
+      "source_name": "Урок 7.mp4"
+    },
+    {
+      "id": 8,
+      "title": "Государственная почта",
+      "short_title": "Государственная почта",
+      "drive_id": "1JAIShN3sS1uj5hB_yfN9JikHBU99i3Kd",
+      "view_url": "https://drive.google.com/file/d/1JAIShN3sS1uj5hB_yfN9JikHBU99i3Kd/view",
+      "embed_url": "https://drive.google.com/file/d/1JAIShN3sS1uj5hB_yfN9JikHBU99i3Kd/preview",
+      "source_name": "Урок 8.mp4"
+    },
+    {
+      "id": 9,
+      "title": "Вексель для близких",
+      "short_title": "Вексель для близких",
+      "drive_id": "126JbU_y2vDjP-eXsLSP12wCzQECWKQ3T",
+      "view_url": "https://drive.google.com/file/d/126JbU_y2vDjP-eXsLSP12wCzQECWKQ3T/view",
+      "embed_url": "https://drive.google.com/file/d/126JbU_y2vDjP-eXsLSP12wCzQECWKQ3T/preview",
+      "source_name": "9 УРОК- Вексель для близких.mp4"
+    },
+    {
+      "id": 10,
+      "title": "Чеки, документы и признание персон",
+      "short_title": "Чеки и документы",
+      "drive_id": "1b2KwtHievr07dFdJVIzcw6KptoOLGnAp",
+      "view_url": "https://drive.google.com/file/d/1b2KwtHievr07dFdJVIzcw6KptoOLGnAp/view",
+      "embed_url": "https://drive.google.com/file/d/1b2KwtHievr07dFdJVIzcw6KptoOLGnAp/preview",
+      "source_name": "Урок 10.mp4"
+    },
+    {
+      "id": 11,
+      "title": "Переакцепты и введение полезных законов",
+      "short_title": "Переакцепты",
+      "drive_id": "13UygJWZop2l-NWbV6BobxeWHb7n3e6K-",
+      "view_url": "https://drive.google.com/file/d/13UygJWZop2l-NWbV6BobxeWHb7n3e6K-/view",
+      "embed_url": "https://drive.google.com/file/d/13UygJWZop2l-NWbV6BobxeWHb7n3e6K-/preview",
+      "source_name": "УРОК 11- переакцепты, документы, вводим полезные законы, отменяем не полезные законы.mp4"
+    },
+    {
+      "id": 12,
+      "title": "Завершающий вексельный свод",
+      "short_title": "Итоговый свод",
+      "drive_id": "1sCA42L5Rg7PnGfXZs-WBNr6OH807Kldu",
+      "view_url": "https://drive.google.com/file/d/1sCA42L5Rg7PnGfXZs-WBNr6OH807Kldu/view",
+      "embed_url": "https://drive.google.com/file/d/1sCA42L5Rg7PnGfXZs-WBNr6OH807Kldu/preview",
+      "source_name": "12 УРОК- завершающий урок по вексельной теме.  (Последующие видео будут как дополнительные наработки из моего и вашего личного опыта.mp4"
+    }
   ]
 }

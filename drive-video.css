@@ -1,0 +1,53 @@
+/* Shared, responsive video interface for both course editions. */
+.drive-watch{border:1px solid #b596aa;background:#fffaf3;box-shadow:0 8px 22px #301b4310}
+.drive-watch-heading{padding:26px 28px 22px;background:linear-gradient(115deg,#f4e8f2,#fff0d9)}
+.drive-watch-heading .eyebrow{font-size:11px;margin-bottom:10px;color:#75425f}
+.drive-watch-heading h2{font-size:clamp(24px,3.1vw,38px);line-height:1.16;letter-spacing:-.04em}
+.drive-watch-heading p{margin:12px 0 0;font-size:14px;line-height:1.55;color:#634e60}
+.drive-frame{position:relative;width:100%;aspect-ratio:16/9;background:#17131f}
+.drive-frame iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.drive-watch-tools{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 24px;border-bottom:1px solid #e2d7d5;font-size:13px}
+.drive-watch-tools>span{color:#625566}
+.drive-watch-tools>a{font-weight:700;text-decoration:underline;text-underline-offset:4px;color:#842e4d;min-height:44px;display:inline-flex;align-items:center}
+.drive-help{font-size:12px;line-height:1.6;margin:0;padding:12px 24px 16px;color:#625566}
+.video-collection-page{background:radial-gradient(ellipse at 10% 0,#f5b39c55,transparent 44%),#ede4e4}
+.video-collection{padding-top:26px;padding-bottom:72px}
+.collection-hero{display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:center;gap:60px;margin-top:24px;padding:54px;background:linear-gradient(120deg,#fffaf2 40%,#f2e7f2);border:1px solid #ad8797;border-top:5px solid #87304c;box-shadow:0 12px 32px #45223412}
+.collection-hero h1{font-size:clamp(34px,4.5vw,66px);line-height:1.05;letter-spacing:-.055em}
+.collection-hero h1 em{font-style:normal;color:#8a2e4b;font-weight:inherit}
+.collection-hero .eyebrow{font-size:12px;color:#6c4865;margin-bottom:22px}
+.collection-hero .lead{margin:24px 0;font-size:16px;max-width:680px;line-height:1.65;color:#594354}
+.collection-seal{padding:26px 15px;text-align:center;border:3px double #a87687;border-radius:50% 50% 4px 4px;color:#703049;background:#fff7e3}
+.collection-seal>span{display:block;font-size:11px;font-weight:700;letter-spacing:.1em}
+.collection-seal strong{display:block;font-size:100px;line-height:1.1;letter-spacing:-.08em;padding-right:.08em;font-weight:400}
+.collection-seal p{font-size:12px;line-height:1.6;margin:16px 0 0;padding-top:14px;border-top:1px solid #d8bda5}
+.collection-index{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid #bdaaaf;padding:32px 0 20px;font-size:12px;font-weight:700;letter-spacing:.02em}
+.collection-index a{text-decoration:underline;text-underline-offset:4px}
+.recording-group{padding-top:42px}
+.recording-group-heading{display:flex;align-items:flex-start;gap:24px;margin-bottom:24px}
+.recording-group-heading>span{font-size:15px;color:#8a2e4b;border-top:3px solid #8a2e4b;padding-top:10px;white-space:nowrap;min-width:76px}
+.recording-group-heading h2{font-size:clamp(27px,3vw,38px)}
+.recording-group-heading p{font-size:14px;margin:10px 0 0;color:#614e5d}
+.recording-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.recording-card{display:flex;flex-direction:column;min-width:0;background:#fffaf2;border:1px solid #c7aeb7;box-shadow:0 7px 18px #38203608;transition:box-shadow .18s,transform .18s}
+.recording-card:hover{transform:translateY(-3px);box-shadow:0 14px 26px #38203618}
+.recording-link{display:flex;flex-direction:column;flex:1}
+.recording-cover{min-height:148px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:18px 24px 36px;color:#fff2db;background:linear-gradient(130deg,#432441,#8d3854);border-bottom:3px solid #d8aa70}
+.recording-card:nth-child(2) .recording-cover{background:linear-gradient(130deg,#29234c,#69537f)}
+.recording-card:nth-child(3) .recording-cover{background:linear-gradient(130deg,#183b50,#47657b)}
+.recording-card:nth-child(4) .recording-cover{background:linear-gradient(130deg,#66354d,#b15846)}
+.recording-number{font-size:76px;line-height:1;letter-spacing:-.07em;font-weight:400;color:#ffe7c6}
+.recording-play{border:1px solid #efd7bb99;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:15px;padding-left:3px;background:#fff3e112}
+.recording-label{position:absolute;bottom:13px;left:24px;font-size:8px;letter-spacing:.06em;color:#f8e2d8}
+.recording-copy{padding:20px 20px 16px;display:flex;flex-direction:column;flex:1}
+.recording-copy .eyebrow{font-size:10px;margin-bottom:10px;color:#7d4d63}
+.recording-copy h3{font-size:20px;line-height:1.22;letter-spacing:-.035em;color:#33253e;margin-bottom:24px;overflow-wrap:anywhere}
+.recording-action{display:flex;justify-content:space-between;gap:6px;margin-top:auto;color:#8a2e4b;font-size:12px;font-weight:700}
+.recording-external{padding:13px 20px;font-size:11px;color:#63525f;border-top:1px solid #e7d8d6;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.collection-help{margin-top:48px;border-top:3px double #b68a9a;padding:30px;background:#fff8ed}
+.collection-help h2{font-size:26px}
+.collection-help p{margin:12px 0 16px;font-size:14px;color:#665163;max-width:760px}
+@media(max-width:1120px){.recording-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.collection-hero{padding:36px;gap:32px;grid-template-columns:minmax(0,1fr) 190px}.collection-seal strong{font-size:86px}}
+@media(max-width:650px){.collection-hero{grid-template-columns:1fr;padding:26px 22px;gap:24px}.collection-seal{display:none}.collection-hero .lead{font-size:14px}.collection-hero .button{font-size:13px}.recording-grid{gap:12px}.recording-cover{min-height:126px;padding:16px 16px 34px}.recording-number{font-size:58px}.recording-label{left:16px;right:10px;font-size:7px}.recording-play{width:32px;height:32px;font-size:11px}.recording-copy{padding:16px 12px}.recording-copy h3{font-size:17px}.recording-action{font-size:11px}.recording-external{padding:12px;font-size:10px}.recording-group-heading{gap:14px}.recording-group-heading>span{min-width:58px;font-size:12px}.drive-watch-heading{padding:20px}.drive-watch-tools{padding:12px 18px;gap:4px}.drive-help{padding:10px 18px 14px}.collection-help{padding:24px}.video-collection{padding-bottom:44px}}
+@media(max-width:420px){.recording-grid{grid-template-columns:1fr}.recording-cover{min-height:148px}.recording-copy h3{font-size:21px}.recording-copy{padding:20px}.recording-external{padding:14px 20px;font-size:12px}.recording-action{font-size:13px}.recording-label{font-size:9px}.recording-number{font-size:72px}}
+@media(prefers-reduced-motion:reduce){.recording-card{transition:none}.recording-card:hover{transform:none}}
