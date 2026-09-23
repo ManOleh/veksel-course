@@ -4,6 +4,9 @@
 .drive-watch-heading .eyebrow{font-size:11px;margin-bottom:10px;color:#75425f}
 .drive-watch-heading h2{font-size:clamp(24px,3.1vw,38px);line-height:1.16;letter-spacing:-.04em}
 .drive-watch-heading p{margin:12px 0 0;font-size:14px;line-height:1.55;color:#634e60}
+.drive-start{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:20px}
+.drive-open{min-height:52px;max-width:100%;gap:12px;font-size:14px;text-align:left;line-height:1.5;white-space:normal}
+.drive-start>span{max-width:610px;font-size:12px;line-height:1.6;color:#634e60}
 .drive-frame{position:relative;width:100%;aspect-ratio:16/9;background:#17131f}
 .drive-frame iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
 .drive-watch-tools{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 24px;border-bottom:1px solid #e2d7d5;font-size:13px}
@@ -43,7 +46,7 @@
 .recording-copy .eyebrow{font-size:10px;margin-bottom:10px;color:#7d4d63}
 .recording-copy h3{font-size:20px;line-height:1.22;letter-spacing:-.035em;color:#33253e;margin-bottom:24px;overflow-wrap:anywhere}
 .recording-action{display:flex;justify-content:space-between;gap:6px;margin-top:auto;color:#8a2e4b;font-size:12px;font-weight:700}
-.recording-external{padding:13px 20px;font-size:11px;color:#63525f;border-top:1px solid #e7d8d6;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.recording-external{display:flex;align-items:center;padding:13px 20px;font-size:12px;font-weight:700;color:#703049;background:#f6e9e7;border-top:1px solid #e0c3c5;text-decoration:underline;text-underline-offset:4px;min-height:48px}
 .collection-help{margin-top:48px;border-top:3px double #b68a9a;padding:30px;background:#fff8ed}
 .collection-help h2{font-size:26px}
 .collection-help p{margin:12px 0 16px;font-size:14px;color:#665163;max-width:760px}

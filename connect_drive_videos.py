@@ -19,8 +19,8 @@ def video_section(lesson):
     return f'''<section id="video" class="lesson-section">
 <div class="section-line"><span>01 / Видеоурок</span><span>Урок {n:02} из 12</span></div>
 <div class="drive-watch">
-  <div class="drive-watch-heading"><span class="eyebrow">Запись занятия</span><h2>{escape(lesson['short_title'])}</h2><p>Нажмите ▶ в плеере, чтобы начать просмотр.</p></div>
-  <div class="drive-frame"><iframe src="{escape(lesson['embed_url'])}" title="Урок {n:02} — {escape(lesson['title'])}" loading="lazy" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+  <div class="drive-watch-heading"><span class="eyebrow">Запись занятия</span><h2>{escape(lesson['short_title'])}</h2><p>Смотрите запись в плеере ниже или откройте её напрямую.</p><div class="drive-start"><a class="button drive-open" href="{escape(lesson['view_url'])}" target="_blank" rel="noopener noreferrer" aria-label="Смотреть урок {n} в Google Диске — новая вкладка"><span aria-hidden="true">▶</span> Смотреть видео в Google Диске ↗</a><span>Если встроенный плеер не запускается, используйте эту кнопку. Видео откроется в новой вкладке.</span></div></div>
+  <div class="drive-frame"><iframe src="{escape(lesson['embed_url'])}" title="Урок {n:02} — {escape(lesson['title'])}" loading="eager" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
   <div class="drive-watch-tools"><span>Видео · Google Диск</span><a href="{escape(lesson['view_url'])}" target="_blank" rel="noopener noreferrer" aria-label="Открыть видео урока {n} отдельно в Google Диске">Открыть видео отдельно ↗</a></div>
   <p class="drive-help">Если плеер не загрузился, откройте запись отдельно по ссылке выше.</p>
 </div></section>'''
@@ -99,13 +99,17 @@ def connect(root):
             lesson = lessons[int(page.stem)-1]
             text, count = re.subn(r'<section id="video".*?</section>', video_section(lesson), text, count=1, flags=re.S)
             assert count == 1, f'Video section missing in {page}'
-            if 'drive-video.css' not in text:
-                text = text.replace('</head>', f'<link rel="stylesheet" href="{relative_root}drive-video.css"></head>')
+            stylesheet = f'<link rel="stylesheet" href="{relative_root}drive-video.css?v=2">'
+            if 'drive-video.css' in text:
+                text = re.sub(r'<link rel="stylesheet" href="[^"]*drive-video\.css(?:\?[^"]*)?">', stylesheet, text)
+            else:
+                text = text.replace('</head>', stylesheet+'</head>')
         if page.name == 'sales.html':
             text = re.sub(r'<a([^>]*?)href="https://t\.me/[^"]*"([^>]*)>.*?</a>', f'<a class="button" href="{relative_root}videos/index.html">Открыть все видео ↗</a>', text)
             text = re.sub(r'<span class="sales-footnote">.*?</span>', '<span class="sales-footnote">Все 12 записей доступны на страницах уроков через плеер Google Диска.</span>', text)
             text = text.replace('Основные записи и два дополнительных видео доступны по прямым ссылкам на сообщения автора.', 'Все 12 записей открываются во встроенном плеере на страницах уроков. Можно также открыть видео отдельно в Google Диске.')
-            text = re.sub(r'(<details><summary>Где смотреть видео\?</summary>)<p>.*?</p>', r'\1<p>Прямо на странице нужного урока: нажмите кнопку воспроизведения. Под плеером есть ссылка для открытия записи отдельно в Google Диске.</p>', text)
+            text = re.sub(r'(<details><summary>Где смотреть видео\?</summary>)<p>.*?</p>', r'\1<p>На странице урока нажмите ▶ в плеере или кнопку «Смотреть видео в Google Диске» над ним. Кнопка открывает ту же запись напрямую в новой вкладке.</p>', text)
+            text = re.sub(r'(<details><summary>Что делать, если плеер не загрузился\?</summary>)<p>.*?</p>', r'\1<p>Нажмите кнопку «Смотреть видео в Google Диске» над плеером. Она открывает запись напрямую, независимо от встроенного окна просмотра.</p>', text)
             text = re.sub(r'<details><summary>Как узнать стоимость и условия участия\?</summary><p>.*?</p></details>', '<details><summary>Что делать, если плеер не загрузился?</summary><p>Нажмите «Открыть видео отдельно» под плеером. Запись откроется в Google Диске в новой вкладке.</p></details>', text)
         if text != page.read_text():
             page.write_text(text)
