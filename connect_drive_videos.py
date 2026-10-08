@@ -127,6 +127,9 @@ def connect(root):
     template = (root / 'lessons/01.html').read_text()
     (root / 'videos/index.html').write_text(archive_page(template, lessons))
     print(f'{root}: connected {len(lessons)} Drive players and video collection')
+    if (root / 'library-catalog.json').exists():
+        from build_library import build
+        build(root)
 
 
 if __name__ == '__main__':
